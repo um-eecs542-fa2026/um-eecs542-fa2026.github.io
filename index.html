@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UME542</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* Custom styles */
+        .centered-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .course-info {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #000000;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        h6 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .table thead th {
+            background-color: #8ea9db;
+            color: white;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: #959fd0;
+        }
+
+        .table tbody tr:hover {
+            background-color: #959fd0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <header id="header" class="alt" style="width: 100%">
+            <div class="bgimg" style="height: 80px; background:  #c1dcf3a0">
+                <div style="height: 30px; width: 100%"></div>
+                <h1>
+                    <font size="+3">EECS 542: Advanced Topics in Computer Vision</font>
+                    <div style="height:10px"></div>
+                </h1>
+            </div>
+        </header>
+    </center>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+        style="padding-top: 5px; padding-bottom: 5px; height: 50px;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center" style="margin: auto;">
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link fs-5" href="index.html">Course Info</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link fs-5" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link fs-5" href="https://piazza.com/class/lm0ztz3mbbv3lx">Piazza</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link fs-5" href="https://www.gradescope.com/courses/602583">Gradescope</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="centered-content">
+        <div class="course-info">
+            <p><strong>Course Info</strong>
+            <ul>
+                <li>Lectures: 2505 GGBL, Mondays/Wednesdays 10:30-12:00
+                <li>Instructor Office Hours: 
+                <li>GSI Office Hours:
+            </ul>
+            <p><strong>Instructors:</strong>
+                <a href="https://jjparkcv.github.io/">Jeong Joon Park</a>
+            </p>
+            <p><strong>GSIs:</strong>
+                <a href="https://devinluo27.github.io/">Yunhao Luo</a>
+            </p>
+
+    
+
+            <p><strong>Lecture Format:</strong> For each lecture starting from Lecture 3, all students are required to
+                read the two assigned papers. At the beginning of each lecture, there will be a 15-minute lecture,
+                followed by the presentation and discussion for the two papers. </p>
+
+            <p><strong>Paper Reviews:</strong> For each paper to be presented in lecture, you will summarize an aspect
+                of the paper that you find interesting,
+                specifically what is interesting and why, and then additionally explain how the 2 papers are connected.
+            </p>
+
+            <p><strong>Presentations:</strong> A team of two students will prepare the presentation of each paper, which
+                is composed of 15-minute presentation of the paper followed by a 5-minute critique and a 10-minute group
+                discussion. For the presentation of the paper, the students should cover the history of the paper
+                (Determine where this paper sits in the context of previous work. Find and report on one older paper
+                cited by the current paper) briefly and explain the main idea, algorithm, and the experiments to the
+                rest of the class. For the 5-minute critique, the student should present a CVPR-style review of the
+                paper (described below) and suggest a possible future direction of the paper. After each presentation
+                and critique, there's 10 minute group discussion. The presentor team is should prepare 3 interesting
+                questions and discussion points to the class. The two teammates are expected to contribute equally to
+                the preparation of the all materials. <a
+                    href='https://docs.google.com/spreadsheets/d/11Pybu9c_4HX3GKm78pTtEtigPRRV8tWxYVSSIX7Vr3I/edit?usp=sharing'>(sign
+                    up sheet)</a>
+
+            </p>
+
+
+            <p><strong>CVPR-style review format is the following:</p></strong>
+            <ul>
+                <li>Paper Summary
+                <li>Paper Strengths
+                <li>Confidence Level: 1~5
+                <li>Final Rating: Strong Reject, Weak Reject, Borderline, Weak Accept, Strong Accept
+                <li>Final Rating Justification
+            </ul>
+
+            <p><strong>GPU Computing:</strong> Great Lakes computing credits are provided for the project. More details
+                to
+                follow.</p>
+
+            <p><strong> Grading:</p></strong>
+            <ul>
+                <li>50%: Final Project
+                <li>30%: Paper Reviews (lowest 3 dropped) + Active Discussions (1+ post) before and during class
+                <li>18%: Class Presentation
+                <li>02%: Course Feedback
+            </ul>
+
+
+            <p><strong>Piazza Rules:</p></strong>
+
+            <ul>
+                <li>We use Piazza for discussions on conceptual and technical questions among classmates. There is no
+                    anonymity. Please be respectful to your classmates.
+                <li>Please post your questions, answers, and comments in dedicated folders. Each paper we read in the
+                    class has its own thread of discussions.
+                <li>Please check Piazza for already posted questions before posting a new one. Unnecessarily clogging up
+                    Piazza makes the platform less usable for everybody.
+                <li>Please use Piazza for all communications, private or public, as much as possible. Others will
+                    benefit from answers and discussions on public questions.
+                <li>Piazza is moderated by the teaching staff.
+            </ul>
+            <p><strong>Email Rules:</p></strong>
+
+            <ul>
+                <li>Please email syu-eecs542@umich.edu only if the Piazza private channel does not work for you. Emails
+                    to individual teaching staff members will be ignored.
+                <li>This single contact ensures that your concerns are addressed in the most timely manner, with the
+                    clarity of a single voice that represents the entire instruction team.
+            </ul>
+
+
+
+            <p><strong>Sign-Up:</p></strong> If you need to be considered for a registration override or put on the
+            wait-list, please sign up at<a href="https://forms.gle/CjKUeYYErLXeZYTr9"> this form</a>.
+
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js for dropdowns -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
