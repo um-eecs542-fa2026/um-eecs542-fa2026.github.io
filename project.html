@@ -27,7 +27,8 @@
         }
 
         .course-info {
-            max-width: 800px;
+            max-width: 900px;
+            width: 100%;
             padding: 20px;
         }
 
@@ -77,6 +78,7 @@
         a {
             text-decoration: none;
         }
+
         .bgimg {
             background: #c1dcf3a0;
             padding: 40px 24px 32px;
@@ -87,14 +89,14 @@
             margin: 0;
             font-size: 2rem;
             font-weight: 600;
-            line-height: 1.3;
+            line-height: 1.2;
             letter-spacing: 0.01em;
             color: #16232e;
         }
 
         .site-subtitle {
-            margin: 12px 0 0;
-            font-size: 0.95rem;
+            margin: 8px 0 0;
+            font-size: 1.1rem;
             font-weight: 400;
             letter-spacing: 0.18em;
             text-transform: uppercase;
@@ -114,6 +116,66 @@
                 font-size: 0.85rem;
                 letter-spacing: 0.14em;
             }
+        }
+
+        /* --- Section cards --- */
+        .policy-section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            padding: 28px 32px;
+            margin-bottom: 24px;
+            scroll-margin-top: 70px;
+        }
+
+        .policy-section h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #16232e;
+            border-bottom: 2px solid #8ea9db;
+            padding-bottom: 10px;
+            margin-bottom: 16px;
+        }
+
+        .policy-section h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #2f4a63;
+            margin-top: 22px;
+            margin-bottom: 8px;
+        }
+
+        .policy-section h3:first-of-type {
+            margin-top: 4px;
+        }
+
+        .policy-section h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #4c6274;
+            margin-top: 14px;
+            margin-bottom: 6px;
+        }
+
+        .policy-section p {
+            margin-bottom: 10px;
+        }
+
+        .policy-section ul,
+        .policy-section ol {
+            margin-bottom: 10px;
+        }
+
+        .subsection {
+            background-color: #f8fafd;
+            border-left: 3px solid #8ea9db;
+            border-radius: 6px;
+            padding: 14px 18px;
+            margin: 12px 0 18px;
+        }
+
+        .subsection h4:first-child {
+            margin-top: 0;
         }
     </style>
 </head>
@@ -151,81 +213,101 @@
 
     <div class="centered-content">
         <div class="course-info">
-            <p><strong>Final Project:</strong> The final project is a major component of the course and is intended to
-                provide hands-on experience conducting research in computer vision or a closely related area.</p>
-            <ul>
-                <li>Teams of approximately <strong>3-5 students</strong>
-                <li>Three main milestones:
-                    <ul>
-                        <li>Project proposal / literature review
-                        <li>Mid-project presentation + report
-                        <li>Final poster presentation + final report
-                    </ul>
-                <li>Project ideas and team formation will be supported through <strong>Piazza</strong>.
-                <li>Once your team is formed, please register it using the project sign-up sheet (link TBA) and list all
-                    team members.
-                <li>Tentative timeline:
-                    <ul>
-                        <li><strong>Proposal:</strong> late September
-                        <li><strong>Mid-project:</strong> early November
-                        <li><strong>Poster session:</strong> Dec 7
-                        <li><strong>Report submission:</strong> Dec 9
-                    </ul>
-                <li>Due to the large number of students, we plan to have one <strong>dedicated project presentation
-                        day</strong>, while the remaining presentations will be scheduled during extra time in regular
-                    lectures.
-                <li>Exact deadlines and presentation schedules will be announced separately.
-            </ul>
 
-            <p><strong>Project Proposal &amp; Mid-Project Presentation:</strong></p>
-            <ul>
-                <li>7 min: presentation
-                <li>3 min: Q&amp;A and feedback
-                <li><strong>Proposal:</strong> problem/motivation, related work, and the overall direction or ideas you
-                    are considering.
-                <li><strong>Mid-project:</strong> method, progress so far, experimental setup, planned baselines and
-                    evaluation metrics, preliminary results if available, and remaining work / next steps.
-            </ul>
+            <section id="overview" class="policy-section">
+                <h2>Overview</h2>
+                <p>The final project is a major component of the course and is intended to provide hands-on
+                    experience conducting research in computer vision or a closely related area.</p>
 
-            <p><strong>Mid-Project Report:</strong> The mid-project report should summarize the project direction and
-                planned experiments. It should include:</p>
-            <ul>
-                <li>Introduction
-                <li>Related Work
-                <li>Planned Method
-                <li>Experimental Plan
-                    <ul>
-                        <li>datasets
-                        <li>baselines
-                        <li>evaluation metrics
-                        <li>planned comparisons / ablations
-                        <li>expected tables or figures
-                    </ul>
-            </ul>
-            <p>Results are not required at this stage, but the experimental setup should be concrete enough that the
-                main experiments are clearly defined.</p>
+                <h3>Team Formation</h3>
+                <ul>
+                    <li>Teams of approximately <strong>3-5 students</strong>
+                    <li>Project ideas and team formation will be supported through <strong>Piazza</strong>
+                    <li>Once your team is formed, please register it using the project sign-up sheet (link TBA)
+                        and list all team members
+                </ul>
 
-            <p><strong>Final Report:</strong> The final report should follow a
-                <a href="https://github.com/cvpr-org/author-kit">CVPR-style paper format</a> and include, at minimum:
-            </p>
-            <ul>
-                <li>Abstract
-                <li>Introduction
-                <li>Related Work
-                <li>Method
-                <li>Experiments
-                <li>Conclusion and Limitations
-            </ul>
-            <p>The report should clearly describe the problem, technical approach, experimental setup, results,
-                analysis, and limitations of the project. At the end of the report, include a brief <strong>contribution
-                    statement</strong> indicating the specific component(s) of the project led by each team member.
-                Every team member should be responsible for at least one specific and meaningful part of the project.
-            </p>
+                <h3>Milestones &amp; Timeline</h3>
+                <ul>
+                    <li><strong>Proposal:</strong> late September &mdash; project proposal / literature review
+                    <li><strong>Mid-project:</strong> early November &mdash; mid-project presentation + report
+                    <li><strong>Poster session:</strong> Dec 7 &mdash; final poster presentation
+                    <li><strong>Report submission:</strong> Dec 9 &mdash; final report
+                </ul>
 
-            <hr>
+                <h3>Presentation Schedule</h3>
+                <ul>
+                    <li>Due to the large number of students, we plan to have one <strong>dedicated project
+                            presentation day</strong>, while the remaining presentations will be scheduled during
+                        extra time in regular lectures
+                    <li>Exact deadlines and presentation schedules will be announced separately
+                </ul>
+            </section>
 
-            <p><strong>GPU Computing:</strong> Great Lakes computing credits are provided for the project. More details
-                to follow.</p>
+            <section id="proposal-midproject-presentation" class="policy-section">
+                <h2>Proposal &amp; Mid-Project Presentation</h2>
+                <ul>
+                    <li><strong>7 min:</strong> presentation
+                    <li><strong>3 min:</strong> Q&amp;A and feedback
+                </ul>
+
+                <div class="subsection">
+                    <h4>Proposal</h4>
+                    <p>Problem/motivation, related work, and the overall direction or ideas you are considering.</p>
+                </div>
+
+                <div class="subsection">
+                    <h4>Mid-Project</h4>
+                    <p>Method, progress so far, experimental setup, planned baselines and evaluation metrics,
+                        preliminary results if available, and remaining work / next steps.</p>
+                </div>
+            </section>
+
+            <section id="mid-project-report" class="policy-section">
+                <h2>Mid-Project Report</h2>
+                <p>The mid-project report should summarize the project direction and planned experiments. It should
+                    include:</p>
+                <ul>
+                    <li>Introduction
+                    <li>Related Work
+                    <li>Planned Method
+                    <li>Experimental Plan
+                        <ul>
+                            <li>Datasets
+                            <li>Baselines
+                            <li>Evaluation metrics
+                            <li>Planned comparisons / ablations
+                            <li>Expected tables or figures
+                        </ul>
+                </ul>
+                <p>Results are not required at this stage, but the experimental setup should be concrete enough
+                    that the main experiments are clearly defined.</p>
+            </section>
+
+            <section id="final-report" class="policy-section">
+                <h2>Final Report</h2>
+                <p>The final report should follow a
+                    <a href="https://github.com/cvpr-org/author-kit">CVPR-style paper format</a> and include, at
+                    minimum:</p>
+                <ul>
+                    <li>Abstract
+                    <li>Introduction
+                    <li>Related Work
+                    <li>Method
+                    <li>Experiments
+                    <li>Conclusion and Limitations
+                </ul>
+                <p>The report should clearly describe the problem, technical approach, experimental setup, results,
+                    analysis, and limitations of the project. At the end of the report, include a brief
+                    <strong>contribution statement</strong> indicating the specific component(s) of the project led
+                    by each team member. Every team member should be responsible for at least one specific and
+                    meaningful part of the project.</p>
+            </section>
+
+            <section id="gpu-computing" class="policy-section">
+                <h2>GPU Computing</h2>
+                <p>Great Lakes computing credits are provided for the project. More details to follow.</p>
+            </section>
 
         </div>
     </div>
