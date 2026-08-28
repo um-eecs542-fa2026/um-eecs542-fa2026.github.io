@@ -1,0 +1,141 @@
+/* ==========================================================================
+   EECS 542 course site - shared styles
+   Edit this file to change any page. Linked from index.html, schedule.html,
+   project.html, and logistics.html.
+   Page-specific rules (e.g. the schedule table) stay in that page's own
+   <style> block, which is loaded after this file and therefore wins.
+   ========================================================================== */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* --- Page content wrapper --- */
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content column width for the text pages */
+.course-info {
+    max-width: 920px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* --- Site header banner --- */
+/* Adjust the space ABOVE the title and BELOW "Fall 2026" here (padding: top sides bottom) */
+.bgimg {
+    background: #c1dcf3a0;
+    padding: 26px 24px 26px;
+    text-align: center;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: #16232e;
+}
+
+.site-subtitle {
+    margin: 8px 0 0;
+    font-size: 1.0rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #4c6274;
+}
+
+@media (max-width: 600px) {
+    .bgimg {
+        padding: 18px 16px 14px;
+    }
+
+    .site-title {
+        font-size: 1.4rem;
+    }
+
+    .site-subtitle {
+        font-size: 0.85rem;
+        letter-spacing: 0.14em;
+    }
+}
+
+/* --- Section cards --- */
+.policy-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    scroll-margin-top: 70px;
+}
+
+.policy-section h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #16232e;
+    border-bottom: 2px solid #8ea9db;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+}
+
+.policy-section h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #2f4a63;
+    margin-top: 22px;
+    margin-bottom: 8px;
+}
+
+.policy-section h3:first-of-type {
+    margin-top: 4px;
+}
+
+.policy-section h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #4c6274;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+
+.policy-section p {
+    margin-bottom: 10px;
+}
+
+.policy-section ul,
+.policy-section ol {
+    margin-bottom: 10px;
+}
+
+.subsection {
+    background-color: #f8fafd;
+    border-left: 3px solid #8ea9db;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 12px 0 18px;
+}
+
+.subsection h4:first-child {
+    margin-top: 0;
+}

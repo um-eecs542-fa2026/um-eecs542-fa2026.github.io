@@ -7,177 +7,7 @@
     <title>UME542</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        /* Custom styles */
-        .centered-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .course-info {
-            max-width: 900px;
-            width: 100%;
-            padding: 20px;
-        }
-
-        strong {
-            font-weight: bold;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            max-width: 300px;
-            border: 1px solid #000000;
-        }
-
-        th,
-        td {
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        tbody tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        h6 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .table thead th {
-            background-color: #8ea9db;
-            color: white;
-        }
-
-        .table tbody tr:nth-child(odd) {
-            background-color: #959fd0;
-        }
-
-        .table tbody tr:hover {
-            background-color: #959fd0;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .bgimg {
-            background: #c1dcf3a0;
-            padding: 40px 24px 32px;
-            text-align: center;
-        }
-
-        .site-title {
-            margin: 0;
-            font-size: 2rem;
-            font-weight: 600;
-            line-height: 1.2;
-            letter-spacing: 0.01em;
-            color: #16232e;
-        }
-
-        .site-subtitle {
-            margin: 8px 0 0;
-            font-size: 1.1rem;
-            font-weight: 400;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: #4c6274;
-        }
-
-        @media (max-width: 600px) {
-            .bgimg {
-                padding: 28px 16px 22px;
-            }
-
-            .site-title {
-                font-size: 1.4rem;
-            }
-
-            .site-subtitle {
-                font-size: 0.85rem;
-                letter-spacing: 0.14em;
-            }
-        }
-
-        /* --- Section cards --- */
-        .policy-section {
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-            padding: 28px 32px;
-            margin-bottom: 24px;
-            scroll-margin-top: 70px;
-        }
-
-        .policy-section h2 {
-            font-size: 1.35rem;
-            font-weight: 700;
-            color: #16232e;
-            border-bottom: 2px solid #8ea9db;
-            padding-bottom: 10px;
-            margin-bottom: 16px;
-        }
-
-        .policy-section h3 {
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: #2f4a63;
-            margin-top: 22px;
-            margin-bottom: 8px;
-        }
-
-        .policy-section h3:first-of-type {
-            margin-top: 4px;
-        }
-
-        .policy-section h4 {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: #4c6274;
-            margin-top: 14px;
-            margin-bottom: 6px;
-        }
-
-        .policy-section p {
-            margin-bottom: 10px;
-        }
-
-        .policy-section ul,
-        .policy-section ol {
-            margin-bottom: 10px;
-        }
-
-        .subsection {
-            background-color: #f8fafd;
-            border-left: 3px solid #8ea9db;
-            border-radius: 6px;
-            padding: 14px 18px;
-            margin: 12px 0 18px;
-        }
-
-        .subsection h4:first-child {
-            margin-top: 0;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -205,6 +35,9 @@
                     </li>
                     <li class="nav-item" style="margin-right: 30px;">
                         <a class="nav-link fs-5" href="project.html">Final Project</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link fs-5" href="logistics.html">Logistics</a>
                     </li>
                 </ul>
             </div>
@@ -293,6 +126,32 @@
                 </ul>
 
                 <div class="subsection">
+                    <h4>Presentation Structure</h4>
+                    <ul>
+                        <li><strong>Paper presentation (first 15 minutes):</strong> explain what the paper actually
+                            did, technically.
+                            <ul>
+                                <li>Motivation and problem setting: what task the paper addresses and why prior work
+                                    was insufficient
+                                <li>Technical approach: the proposed method, model or architecture, loss functions
+                                    and training procedure, and any key algorithmic details
+                                <li>Experiments: datasets, baselines, evaluation metrics, main results, and ablations
+                                <li>Provide enough background so that the class can follow the method, but keep the
+                                    focus on the paper's own technical contributions
+                            </ul>
+                        <li><strong>Critique (last 5 minutes):</strong> your own assessment of the paper.
+                            <ul>
+                                <li>Discuss strengths, weaknesses, and limitations of the method, experiments, or
+                                    claims
+                                <li>End by giving <strong>3-5 discussion questions</strong> about the paper for the
+                                    class
+                                <li>Good questions are open-ended and debatable (e.g., design choices, assumptions,
+                                    generalization, broader implications) rather than factual recall
+                            </ul>
+                    </ul>
+                </div>
+
+                <div class="subsection">
                     <h4>Slide Submission Policy</h4>
                     <p>Please submit your slides through the
                         <a href="https://forms.gle/ZA65TiHYce55JLM19">Google Form</a> both <strong>before and after
@@ -309,14 +168,6 @@
                             </ul>
                         <li><strong>Final submission:</strong> submit the final version of your slides by the end of
                             your presentation day.
-                    </ul>
-                </div>
-
-                <div class="subsection">
-                    <h4>Critique</h4>
-                    <ul>
-                        <li>Last 5 minutes of the presentation
-                        <li>Presenters give <strong>3-5 discussion questions</strong> about the paper
                     </ul>
                 </div>
 
@@ -344,42 +195,10 @@
                 </ul>
             </section>
 
-            <section id="grading" class="policy-section">
-                <h2>Grading</h2>
-                <ul>
-                    <li><strong>50%:</strong> Final Project
-                    <li><strong>23%:</strong> Paper Reviews + Active Discussions
-                    <li><strong>25%:</strong> Class Presentation
-                        <ul>
-                            <li>5%: Pre- and Post-Presentation Slide Submission
-                            <li>20%: In-class presentation
-                        </ul>
-                    <li><strong>2%:</strong> Course Feedback
-                </ul>
-            </section>
-
-            <section id="piazza-rules" class="policy-section">
-                <h2>Piazza Rules</h2>
-                <ul>
-                    <li>We use Piazza for discussions on conceptual and technical questions among classmates. There
-                        is no anonymity. Please be respectful to your classmates.
-                    <li>Please post your questions, answers, and comments in dedicated folders. Each paper we read in
-                        the class has its own thread of discussions.
-                    <li>Please check Piazza for already posted questions before posting a new one. Unnecessarily
-                        clogging up Piazza makes the platform less usable for everybody.
-                    <li>Please use Piazza for all communications, private or public, as much as possible. Others will
-                        benefit from answers and discussions on public questions.
-                    <li>Piazza is moderated by the teaching staff.
-                </ul>
-            </section>
-
-            <section id="email-rules" class="policy-section">
-                <h2>Email Rules</h2>
-                <ul>
-                    <li>For questions, please use Piazza or email
-                        <a href="mailto:park-eecs542@umich.edu">park-eecs542@umich.edu</a>.
-                    <li>Emails to individual teaching staff members will be ignored.
-                </ul>
+            <section id="logistics" class="policy-section">
+                <h2>Logistics</h2>
+                <p>Grading breakdown, Piazza rules, and email rules are on the
+                    <a href="logistics.html">Logistics</a> page.</p>
             </section>
 
         </div>

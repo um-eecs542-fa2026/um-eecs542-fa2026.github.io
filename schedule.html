@@ -7,18 +7,9 @@
     <title>EECS 542</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            padding: 20px;
-        }
-
+        /* Page-specific: schedule table + material list (loaded after style.css) */
         .material-list {
             list-style-type: none;
             padding: 0;
@@ -28,13 +19,20 @@
             text-transform: capitalize;
         }
 
+        /* opt out of capitalize, e.g. names that start with a symbol */
+        .material-list li.nocaps {
+            text-transform: none;
+        }
+
         .table {
             border-collapse: separate;
+            table-layout: fixed;
         }
 
         .table th,
         .table td {
             border-top: none;
+            overflow-wrap: anywhere;
         }
 
         .table thead th {
@@ -64,36 +62,25 @@
             line-height: 1.2;
         }
 
-        a {
-            text-decoration: none;
-        }
-        .table {
-            table-layout: fixed;
-        }
-
-        .table th,
-        .table td {
-            overflow-wrap: anywhere;
-        }
-
+        /* Column widths */
         .table th:nth-child(1),
         .table td:nth-child(1) {
-            width: 3%;
+            width: 6%;
         }
 
         .table th:nth-child(2),
         .table td:nth-child(2) {
-            width: 7%;
+            width: 11%;
         }
 
         .table th:nth-child(3),
         .table td:nth-child(3) {
-            width: 14%;
+            width: 18%;
         }
 
         .table th:nth-child(4),
         .table td:nth-child(4) {
-            width: 34%;
+            width: 35%;
         }
 
         .table th:nth-child(5),
@@ -104,45 +91,6 @@
         .table th:nth-child(6),
         .table td:nth-child(6) {
             width: 17%;
-        }
-
-        .bgimg {
-            background: #c1dcf3a0;
-            padding: 40px 24px 32px;
-            text-align: center;
-        }
-
-        .site-title {
-            margin: 0;
-            font-size: 2rem;
-            font-weight: 600;
-            line-height: 1.3;
-            letter-spacing: 0.01em;
-            color: #16232e;
-        }
-
-        .site-subtitle {
-            margin: 12px 0 0;
-            font-size: 0.95rem;
-            font-weight: 400;
-            letter-spacing: 0.18em;
-            text-transform: uppercase;
-            color: #4c6274;
-        }
-
-        @media (max-width: 600px) {
-            .bgimg {
-                padding: 28px 16px 22px;
-            }
-
-            .site-title {
-                font-size: 1.4rem;
-            }
-
-            .site-subtitle {
-                font-size: 0.85rem;
-                letter-spacing: 0.14em;
-            }
         }
     </style>
 </head>
@@ -172,6 +120,9 @@
                     </li>
                     <li class="nav-item" style="margin-right: 30px;">
                         <a class="nav-link fs-5" href="project.html">Final Project</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link fs-5" href="logistics.html">Logistics</a>
                     </li>
                 </ul>
             </div>
@@ -227,11 +178,11 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/1312.6114">VAE</a> [ICLR 2014]</li>
-                            <li><a href="https://arxiv.org/abs/1406.2661">GAN</a> [2014]</li>
-                            <li><a href="https://arxiv.org/abs/1505.05770">Normalizing flows</a> [ICML 2015]</li>
-                            <li><a href="https://arxiv.org/abs/2006.11239">Diffusion models</a> [NeurIPS 2020]</li>
-                            <li><a href="https://arxiv.org/abs/2210.02747">Flow matching</a> [ICLR 2023]</li>
+                            <li><a href="https://arxiv.org/abs/1312.6114">VAE</a></li>
+                            <li><a href="https://arxiv.org/abs/1406.2661">GAN</a></li>
+                            <li><a href="https://arxiv.org/abs/1505.05770">Normalizing flows</a></li>
+                            <li><a href="https://arxiv.org/abs/2006.11239">Diffusion models</a></li>
+                            <li><a href="https://arxiv.org/abs/2210.02747">Flow matching</a></li>
                         </ul>
                     </td>
                     <td>
@@ -268,13 +219,13 @@
                     <td>Modern ConvNets and Visual Recognition</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/1512.03385">ResNet</a> [CVPR 2016] &amp; <a href="https://arxiv.org/abs/2201.03545">ConvNeXt</a> [CVPR 2022]</li>
+                            <li><a href="https://arxiv.org/abs/1512.03385">ResNet</a> &amp; <a href="https://arxiv.org/abs/2201.03545">ConvNeXt</a></li>
                             <li><a href="https://arxiv.org/abs/1506.02640">YOLO v1</a> &amp; <a href="https://arxiv.org/abs/1612.08242">v2</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/1905.11946">EfficientNet</a> [ICML 2019]</li>
+                            <li><a href="https://arxiv.org/abs/1905.11946">EfficientNet</a></li>
                             <li><a href="https://arxiv.org/abs/1703.06870">Mask R-CNN</a></li>
                             <li><a href="https://arxiv.org/abs/1505.04597">UNet</a></li>
                         </ul>
@@ -292,15 +243,16 @@
                     <td>Transformers</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/1706.03762">Attention is all you need</a> [NeurIPS 2017] &amp; <a href="https://arxiv.org/abs/2010.11929">ViT</a> [ICLR 2021]</li>
-                            <li><a href="https://arxiv.org/abs/2005.14165">GPT-3</a> [NeurIPS 2020] &amp; <a href="https://arxiv.org/abs/2001.08361">Scaling Laws for Neural Language Models</a></li>
+                            <li><a href="https://arxiv.org/abs/1706.03762">Attention is all you need</a> &amp; <a href="https://arxiv.org/abs/2010.11929">ViT</a></li>
+                            <li><a href="https://arxiv.org/abs/2005.14165">GPT-3</a> &amp; <a href="https://arxiv.org/abs/2001.08361">Scaling Laws</a></li>
+                             <!-- for Neural Language Models -->
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/1810.04805">BERT</a> [NeurIPS 2018]</li>
-                            <li><a href="https://arxiv.org/abs/2105.01601">MLP-Mixer</a> [2021]</li>
-                            <li><a href="https://arxiv.org/abs/2103.14030">Swin Transformer</a> [ICCV 2021]</li>
+                            <li><a href="https://arxiv.org/abs/1810.04805">BERT</a></li>
+                            <li><a href="https://arxiv.org/abs/2105.01601">MLP-Mixer</a></li>
+                            <li><a href="https://arxiv.org/abs/2103.14030">Swin Transformer</a></li>
                         </ul>
                     </td>
                     <td>
@@ -316,13 +268,14 @@
                     <td>Correspondence / Tracking / Motion</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2003.12039">RAFT</a> [ECCV 2020]</li>
-                            <li><a href="https://arxiv.org/abs/2307.07635">CoTracker</a> [ECCV 2024]</li>
+                            <li><a href="https://arxiv.org/abs/2003.12039">RAFT</a></li>
+                            <li><a href="https://arxiv.org/abs/2307.07635">CoTracker</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li><a href="https://arxiv.org/abs/2405.14793">SEA-RAFT</a></li>
+                            <li><a href="https://arxiv.org/abs/2404.04319">SpatialTracker</a></li>
                         </ul>
                     </td>
                     <td>
@@ -338,13 +291,15 @@
                     <td>Dense Prediction</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2304.02643">SAM</a> [ICCV 2023]</li>
-                            <li><a href="https://arxiv.org/abs/2303.05499">Grounding DINO</a> [ECCV 2024]</li>
+                            <li><a href="https://arxiv.org/abs/2304.02643">SAM</a></li>
+                            <li><a href="https://arxiv.org/abs/2303.05499">Grounding DINO</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li><a href="https://arxiv.org/abs/2511.10647">Depth Anything 3</a></li>
+                            <li><a href="https://arxiv.org/abs/2005.12872">DETR</a></li>
+                            <li><a href="https://arxiv.org/abs/2112.01527">Mask2Former</a></li>
                         </ul>
                     </td>
                     <td>
@@ -366,8 +321,8 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2304.08485">LLaVA</a> [NeurIPS 2023]</li>
-                            <li><a href="https://arxiv.org/abs/2303.15343">SigLIP</a> [ICCV 2023]</li>
+                            <li><a href="https://arxiv.org/abs/2304.08485">LLaVA</a></li>
+                            <li><a href="https://arxiv.org/abs/2303.15343">SigLIP</a></li>
                             <li><a href="https://arxiv.org/abs/2204.14198">Flamingo</a></li>
                         </ul>
                     </td>
@@ -384,14 +339,16 @@
                     <td>Representation Learning</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2111.06377">MAE</a> [CVPR 2022]</li>
-                            <li><a href="https://arxiv.org/abs/2304.07193">DINOv2</a> [2023]</li>
+                            <li><a href="https://arxiv.org/abs/2111.06377">MAE</a></li>
+                            <li><a href="https://arxiv.org/abs/2304.07193">DINOv2</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2104.14294">DINO</a> [ICCV 2021]</li>
-                            <li><a href="https://arxiv.org/abs/2002.05709">SimCLR</a> [ICML 2020]</li>
+                            <li><a href="https://arxiv.org/abs/2002.05709">SimCLR</a></li>
+                            <li><a href="https://arxiv.org/abs/1911.05722">MoCo</a></li>
+                            <!-- <li><a href="https://arxiv.org/abs/2006.07733">BYOL</a></li> -->
+                            <li><a href="https://arxiv.org/abs/2301.08243">I-JEPA</a></li>
                         </ul>
                     </td>
                     <td>
@@ -407,13 +364,15 @@
                     <td>Interpretability</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/1610.02391">Grad-CAM</a> [ICCV 2017]</li>
-                            <li><a href="https://arxiv.org/abs/2012.09838">Transformer Interpretability Beyond Attention Visualization</a> [CVPR 2021]</li>
+                            <li><a href="https://arxiv.org/abs/1610.02391">Grad-CAM</a></li>
+                            <li><a href="https://arxiv.org/abs/2012.09838">Transformer Interpretability</a></li>
+                            <!-- Beyond Attention Visualization -->
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li><a href="https://arxiv.org/abs/1704.05796">Network Dissection</a></li>
+                            <li><a href="https://arxiv.org/abs/2310.05916">Interpreting CLIP's Image Representation</a></li>
                         </ul>
                     </td>
                     <td>
@@ -429,13 +388,14 @@
                     <td>Generative Adversarial Nets</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/1703.10593">CycleGAN</a> [ICCV 2017]</li>
-                            <li><a href="https://arxiv.org/abs/1912.04958">StyleGAN2</a> [CVPR 2020]</li>
+                            <li><a href="https://arxiv.org/abs/1703.10593">CycleGAN</a></li>
+                            <li><a href="https://arxiv.org/abs/1912.04958">StyleGAN2</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li><a href="https://arxiv.org/abs/2303.05511">GigaGAN</a></li>
+                            <li><a href="https://arxiv.org/abs/1809.11096">BigGAN</a></li>
                         </ul>
                     </td>
                     <td>
@@ -451,14 +411,14 @@
                     <td>Diffusion Models</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2006.11239">DDPM</a> [CVPR 2018]</li>
-                            <li><a href="https://arxiv.org/abs/2210.02747">Flow matching</a> [ICLR]</li>
+                            <li><a href="https://arxiv.org/abs/2006.11239">DDPM</a></li>
+                            <li><a href="https://arxiv.org/abs/2210.02747">Flow matching</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2010.02502">DDIM</a> [ICLR 2021]</li>
-                            <li><a href="https://arxiv.org/abs/2207.12598">Classifier-Free Guidance</a> [NeurIPS 2021 Workshop]</li>
+                            <li><a href="https://arxiv.org/abs/2010.02502">DDIM</a></li>
+                            <li><a href="https://arxiv.org/abs/2207.12598">Classifier-Free Guidance</a></li>
                         </ul>
                     </td>
                     <td>
@@ -474,13 +434,13 @@
                     <td>Diffusion Image Editing</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2211.09800">InstructPix2Pix</a> [CVPR 2023]</li>
-                            <li><a href="https://arxiv.org/abs/2211.09794">Null-text Inversion</a> [CVPR 2023]</li>
+                            <li><a href="https://arxiv.org/abs/2211.09800">InstructPix2Pix</a></li>
+                            <li><a href="https://arxiv.org/abs/2211.09794">Null-text Inversion</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2412.08629">FlowEdit</a> [ICCV 2025]</li>
+                            <li><a href="https://arxiv.org/abs/2412.08629">FlowEdit</a></li>
                         </ul>
                     </td>
                     <td>
@@ -496,13 +456,16 @@
                     <td>Image/Video Generative Models</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2212.09748">DiT: Scalable Diffusion Models with Transformers</a> [ICCV 2023]</li>
-                            <li><a href="https://arxiv.org/abs/2204.03458">Video Diffusion Models</a> [NeurIPS 2022]</li>
+                            <li><a href="https://arxiv.org/abs/2212.09748">DiT</a></li>
+                            <!-- : Scalable Diffusion Models with Transformers -->
+                            <li><a href="https://arxiv.org/abs/2204.03458">Video Diffusion Models</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li><a href="https://arxiv.org/abs/2205.11487">Imagen</a></li>
+                            <li><a href="https://arxiv.org/abs/2503.20314">Wan</a></li>
+                            <li><a href="https://arxiv.org/abs/2408.06072">CogVideoX</a></li>
                         </ul>
                     </td>
                     <td>
@@ -545,9 +508,9 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/1804.02505">MVSNet</a> [ECCV 2018]</li>
-                            <li><a href="https://arxiv.org/abs/2503.11651">VGGT</a> [CVPR 2025]</li>
-                            <li><a href="https://arxiv.org/abs/2503.01661">MUSt3R</a> [CVPR 2025]</li>
+                            <li><a href="https://arxiv.org/abs/1804.02505">MVSNet</a></li>
+                            <li><a href="https://arxiv.org/abs/2503.11651">VGGT</a></li>
+                            <li><a href="https://arxiv.org/abs/2503.01661">MUSt3R</a></li>
                         </ul>
                     </td>
                     <td>
@@ -564,7 +527,7 @@
                     <td>
                         <ul class="material-list">
                             <li><a href="https://arxiv.org/abs/2312.10035">Point Transformer V3</a></li>
-                            <li><a href="https://arxiv.org/abs/2308.04079">3D Gaussian Splatting</a> [SIGGRAPH 2023]</li>
+                            <li><a href="https://arxiv.org/abs/2308.04079">3D Gaussian Splatting</a></li>
                         </ul>
                     </td>
                     <td>
@@ -585,14 +548,14 @@
                     <td>Neural Representations for 3D</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/1901.05103">DeepSDF</a> [CVPR 2019]</li>
-                            <li><a href="https://arxiv.org/abs/2003.08934">NeRF</a> [ECCV 2020]</li>
+                            <li><a href="https://arxiv.org/abs/1901.05103">DeepSDF</a></li>
+                            <li><a href="https://arxiv.org/abs/2003.08934">NeRF</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/1812.03828">Occupancy Networks</a> [CVPR 2019]</li>
-                            <li><a href="https://arxiv.org/abs/2006.09661">SIREN</a> [NeurIPS 2020]</li>
+                            <li><a href="https://arxiv.org/abs/1812.03828">Occupancy Networks</a></li>
+                            <li><a href="https://arxiv.org/abs/2006.09661">SIREN</a></li>
                         </ul>
                     </td>
                     <td>
@@ -608,15 +571,13 @@
                     <td>3D Generative Models</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2112.07945">EG3D</a> [CVPR 2022]</li>
+                            <li><a href="https://arxiv.org/abs/2112.07945">EG3D</a></li>
                             <li><a href="https://arxiv.org/abs/2501.12202">Hunyuan3D 2.0</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2209.14988">DreamFusion</a> [ICLR 2023]</li>
-                            <li><a href="https://arxiv.org/abs/2311.10122">Video-LLaVA</a> [EMNLP 2024]</li>
-                            <li><a href="https://arxiv.org/abs/2409.14485">Video-XL: Extra-Long Vision-Language Model for Hour-Scale Video Understanding</a> [CVPR 2025]</li>
+                            <li><a href="https://arxiv.org/abs/2209.14988">DreamFusion</a></li>
                         </ul>
                     </td>
                     <td>
@@ -629,7 +590,7 @@
                 <tr>
                     <td>18</td>
                     <td class="date-cell">2026-11-04<span class="dow">(Wed)</span></td>
-                    <td>Video Understanding / Representation Learning</td>
+                    <td>Video Understanding</td>
                     <td>
                         <ul class="material-list">
                             <li><a href="https://arxiv.org/abs/2103.15691">ViViT: A Video Vision Transformer</a></li>
@@ -638,7 +599,8 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li><a href="https://arxiv.org/abs/2311.10122">Video-LLaVA</a></li>
+                            <li><a href="https://arxiv.org/abs/2409.14485">Video-XL</a></li>
                         </ul>
                     </td>
                     <td>
@@ -655,12 +617,13 @@
                     <td>
                         <ul class="material-list">
                             <li><a href="https://arxiv.org/abs/2303.04137">Diffusion Policy</a></li>
-                            <li><a href="https://arxiv.org/abs/2504.16054">&pi;0.5</a></li>
+                            <li class="nocaps"><a href="https://arxiv.org/abs/2504.16054">&pi;0.5</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li><a href="https://arxiv.org/abs/2502.19645">OpenVLA-OFT</a></li>
+                            <li><a href="https://arxiv.org/abs/2501.09747">FAST</a></li>
                         </ul>
                     </td>
                     <td>
@@ -676,13 +639,15 @@
                     <td>Video Models in Robot Learning</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2302.00111">Learning Universal Policies via Text-Guided Video Generation</a></li>
+                            <li><a href="https://arxiv.org/abs/2302.00111">UniPi</a></li>
                             <li><a href="https://arxiv.org/abs/2503.00200">Unified Video Action Model</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li><a href="https://arxiv.org/abs/2602.15922">DreamZero</a></li>
+                            <li><a href="https://arxiv.org/abs/2512.13030">Motus</a></li>
+                            <li><a href="https://arxiv.org/abs/2310.08576">AVDC</a></li>
                         </ul>
                     </td>
                     <td>
@@ -698,13 +663,14 @@
                     <td>World Models [Robotics]</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://arxiv.org/abs/2411.04983">DINO-WM</a> [ICML]</li>
-                            <li>PointWorld [CVPR 2026]</li>
+                            <li><a href="https://arxiv.org/abs/2411.04983">DINO-WM</a></li>
+                            <li><a href="https://arxiv.org/abs/2601.03782">PointWorld</a></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li><a href="https://arxiv.org/abs/2511.00062">Cosmos-Predict2.5</a></li>
+                            <li><a href="https://arxiv.org/abs/2402.15391">Genie</a></li>
                         </ul>
                     </td>
                     <td>
@@ -720,8 +686,8 @@
                     <td>Neural Operators / Scientific ML</td>
                     <td>
                         <ul class="material-list">
-                            <li><a href="https://doi.org/10.1016/j.jcp.2018.10.045">Physics-Informed Neural Networks</a> [JCP 2019]</li>
-                            <li><a href="https://arxiv.org/abs/2010.08895">Fourier Neural Operator (FNO)</a> [ICLR 2021]</li>
+                            <li><a href="https://doi.org/10.1016/j.jcp.2018.10.045">Physics-Informed Neural Networks</a></li>
+                            <li><a href="https://arxiv.org/abs/2010.08895">Fourier Neural Operator (FNO)</a></li>
                         </ul>
                     </td>
                     <td>
@@ -743,7 +709,7 @@
                     <td>
                         <ul class="material-list">
                             <li><a href="https://arxiv.org/abs/2406.17763">DiffusionPDE</a></li>
-                            <li>Error-Conditioned Neural Solvers</li>
+                            <li><a href="https://arxiv.org/abs/2606.27354">Error-Conditioned Neural Solvers</a></li>
                         </ul>
                     </td>
                     <td>
@@ -824,8 +790,10 @@
                 <tr>
                     <td>26</td>
                     <td class="date-cell">2026-12-07<span class="dow">(Mon)</span></td>
-                    <td>Final Poster Session</td>
+                    <td></td>
                     <td>
+                        Final Project Poster Presentation <br/>
+                        Location: Tishman Hall, BBB
                         <ul class="material-list">
                             <li></li>
                         </ul>
@@ -847,9 +815,9 @@
                     <td class="date-cell">2026-12-09<span class="dow">(Wed)</span></td>
                     <td></td>
                     <td>
-                        <ul class="material-list">
-                            <li></li>
-                        </ul>
+                        [No Lecture] <br/>
+                        Final Project Report Submission Deadline
+
                     </td>
                     <td>
                         <ul class="material-list">
