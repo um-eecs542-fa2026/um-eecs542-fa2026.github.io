@@ -27,7 +27,8 @@
         }
 
         .course-info {
-            max-width: 800px;
+            max-width: 900px;
+            width: 100%;
             padding: 20px;
         }
 
@@ -77,6 +78,7 @@
         a {
             text-decoration: none;
         }
+
         .bgimg {
             background: #c1dcf3a0;
             padding: 40px 24px 32px;
@@ -115,6 +117,66 @@
                 letter-spacing: 0.14em;
             }
         }
+
+        /* --- Section cards --- */
+        .policy-section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            padding: 28px 32px;
+            margin-bottom: 24px;
+            scroll-margin-top: 70px;
+        }
+
+        .policy-section h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #16232e;
+            border-bottom: 2px solid #8ea9db;
+            padding-bottom: 10px;
+            margin-bottom: 16px;
+        }
+
+        .policy-section h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #2f4a63;
+            margin-top: 22px;
+            margin-bottom: 8px;
+        }
+
+        .policy-section h3:first-of-type {
+            margin-top: 4px;
+        }
+
+        .policy-section h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #4c6274;
+            margin-top: 14px;
+            margin-bottom: 6px;
+        }
+
+        .policy-section p {
+            margin-bottom: 10px;
+        }
+
+        .policy-section ul,
+        .policy-section ol {
+            margin-bottom: 10px;
+        }
+
+        .subsection {
+            background-color: #f8fafd;
+            border-left: 3px solid #8ea9db;
+            border-radius: 6px;
+            padding: 14px 18px;
+            margin: 12px 0 18px;
+        }
+
+        .subsection h4:first-child {
+            margin-top: 0;
+        }
     </style>
 </head>
 
@@ -152,139 +214,170 @@
 
     <div class="centered-content">
         <div class="course-info">
-            <p><strong>Course Info</strong>
-            <ul>
-                <li>Lectures: 2505 GGBL, Mondays/Wednesdays 10:30 AM-12:00 PM
-                <li>Relevant Links:
-                    <a href="https://piazza.com/class/msyw1hcgw4l29y">Piazza</a> /
-                    <a href="https://www.gradescope.com/courses/1356343">Gradescope</a>
-                <li>Instructor Office Hours:
-                <li>GSI Office Hours:
-            </ul>
-            <p><strong>Instructor:</strong>
-                <a href="https://jjparkcv.github.io/">Jeong Joon Park</a>
-            </p>
-            <p><strong>GSIs:</strong>
-                <a href="https://devinluo27.github.io/">Yunhao Luo</a>,
-                <a href="https://hyelinnam.github.io/">Hyelin Nam</a>
-            </p>
 
-            <hr>
+            <section id="course-info" class="policy-section">
+                <h2>Course Info</h2>
+                <ul>
+                    <li>Lectures: 2505 GGBL, Mondays/Wednesdays 10:30 AM-12:00 PM
+                    <li>Relevant Links:
+                        <a href="https://piazza.com/class/msyw1hcgw4l29y">Piazza</a> /
+                        <a href="https://www.gradescope.com/courses/1356343">Gradescope</a>
+                    <li>Instructor Office Hours: TBD
+                    <li>GSI Office Hours: TBD
+                </ul>
+                <p><strong>Instructor:</strong>
+                    <a href="https://jjparkcv.github.io/">Jeong Joon Park</a>
+                </p>
+                <p><strong>GSIs:</strong>
+                    <a href="https://devinluo27.github.io/">Yunhao Luo</a>,
+                    <a href="https://hyelinnam.github.io/">Hyelin Nam</a>
+                </p>
+            </section>
 
-            <p><strong>Lecture Format:</strong> Each lecture is approximately 80 minutes. Starting from Lecture 3, all
-                students are expected to read the two assigned papers before class. </p>
-            For each paper, the class time is organized as:
-            <ul>
-                <li>20 min presentation (~15 min for the presentation and ~5 min for the critique TODO:)
-                <li>10 min discussion (TODO:)
-            </ul>
-            <p>The goal of the course is not only to understand the
-                technical content of each paper, but also to practice critically reading, presenting, and discussing
-                research.</p>
+            <section id="lecture-format" class="policy-section">
+                <h2>Lecture Format</h2>
+                <p>Each lecture is approximately 80 minutes. The goal of the course is not only to understand the
+                    technical content of each paper, but also to practice critically reading, presenting, and
+                    discussing research.</p>
 
-            <p><strong>Final Project Discussion:</strong></p>
-            <ul>
-                <li>
-            </ul>
+                <h3>Paper Presentation</h3>
+                <p>Starting from Lecture 3, all students are expected to read the two assigned papers before class.
+                    For each paper:</p>
+                <ul>
+                    <li><strong>20 min presentation</strong> (~15 min presentation + 5 min critique)
+                    <li><strong>10 min discussion</strong>
+                </ul>
+                <p>See <a href="#paper-presentations">Paper Presentations</a> below for the critique and discussion
+                    details.</p>
 
-            <hr>
+                <h3>Project Check-in Presentation</h3>
+                <ul>
+                    <li>20-30 min on selected lectures, following the paper presentations
+                    <li>These sessions will be used for final project proposal and mid-project presentations
+                    <li>See the <a href="#final-project">Final Project</a> section for details on the presentation
+                        format and schedule
+                </ul>
+            </section>
 
-            <p><strong>Paper Reviews:</strong> Submit a review for each assigned paper <strong>before class</strong>
-                through <strong>Gradescope</strong>. Please follow a CVPR-style review format:</p>
-            <ul>
-                <li>Summary
-                <li>Strengths
-                <li>Weaknesses (Major / Minor)
-                <li>Personal Interest (1-5) with justification
+            <section id="paper-reviews" class="policy-section">
+                <h2>Paper Reviews</h2>
+                <p>Submit a review for each assigned paper <strong>before class</strong> through
+                    <strong>Gradescope</strong>, including papers you are presenting.</p>
+
+                <h3>Review Format</h3>
+                <p>Please follow a CVPR-style review format:</p>
+                <ul>
+                    <li>Summary
+                    <li>Strengths
+                    <li>Weaknesses (Major / Minor)
+                    <li>Rate the following (1-5: Poor, Fair, Good, Very good, Excellent) with justification
+                        <ul>
+                            <li>Soundness
+                            <li>Presentation
+                            <li>Contribution
+                        </ul>
+                </ul>
+                <p>There is <strong>no strict character or page limit</strong> for the review.</p>
+            </section>
+
+            <section id="paper-presentations" class="policy-section">
+                <h2>Paper Presentations</h2>
+
+                <h3>For Presenters</h3>
+                <ul>
+                    <li>Presentation teams consist of <strong>2-3 students</strong>
+                    <li>Sign up for a paper and presentation slot using the
+                        <a href="https://docs.google.com/spreadsheets/d/11Pybu9c_4HX3GKm78pTtEtigPRRV8tWxYVSSIX7Vr3I/edit?usp=sharing">sign-up
+                            sheet</a>
+                    <li>Prepare a <strong>20-minute presentation</strong> of the assigned paper
+                </ul>
+
+                <div class="subsection">
+                    <h4>Slide Submission Policy</h4>
+                    <p>Please submit your slides through the
+                        <a href="https://forms.gle/ZA65TiHYce55JLM19">Google Form</a> both <strong>before and after
+                            your presentation</strong>.</p>
                     <ul>
-                        <li>1: Low, 2: Somewhat low, 3: Neutral, 4: High, 5: Very high
+                        <li><strong>Pre-presentation submission:</strong>
+                            <ul>
+                                <li>Monday presentations: due by Friday EOD
+                                <li>Wednesday presentations: due by Sunday EOD
+                                <li>The slides do not need to be fully polished, but they should at least clearly
+                                    show the overall structure and flow of your presentation.
+                                <li>You can continue editing your slides after this submission.
+                                <li>The teaching staff may provide feedback if needed.
+                            </ul>
+                        <li><strong>Final submission:</strong> submit the final version of your slides by the end of
+                            your presentation day.
                     </ul>
-            </ul>
-            <p>There is <strong>no strict character or page limit</strong> for the review.</p>
+                </div>
 
-            <hr>
-
-            <p><strong>Paper Presentations:</strong></p>
-            <ul>
-                <li>Presentation teams consist of <strong>2-3 students</strong>
-                <li>Sign up for a paper and presentation slot using the
-                    <a href="https://docs.google.com/spreadsheets/d/11Pybu9c_4HX3GKm78pTtEtigPRRV8tWxYVSSIX7Vr3I/edit?usp=sharing">sign-up
-                        sheet</a>
-                <li>Prepare a <strong>20-minute presentation</strong> of the assigned paper
-            </ul>
-
-            <p><strong>Slide Submission Policy:</strong> Please submit your slides through the Google Form (link TBA)
-                both <strong>before and after your presentation</strong>.</p>
-            <ul>
-                <li><strong>Pre-presentation submission:</strong>
+                <div class="subsection">
+                    <h4>Critique</h4>
                     <ul>
-                        <li>Monday presentations: due by Friday EOD
-                        <li>Wednesday presentations: due by Sunday EOD
-                        <li>The slides do not need to be fully polished, but they should at least clearly show the
-                            overall structure and flow of your presentation.
-                        <li>You can continue editing your slides after this submission.
-                        <li>The teaching staff may provide feedback if needed.
+                        <li>Last 5 minutes of the presentation
+                        <li>Presenters give <strong>3-5 discussion questions</strong> about the paper
                     </ul>
-                <li><strong>Final submission:</strong> submit the final version of your slides by the end of your
-                    presentation day.
-            </ul>
+                </div>
 
-            <p><strong>Discussion:</strong></p>
-            <ul>
-                <li>10-minute discussion after each paper presentation
-                <li>Discuss in small groups of <strong>2-6 students</strong>
-                <li>Presenters prepare approximately <strong>5 discussion questions</strong>
-                <li>Each group submits a short discussion summary to <strong>Gradescope</strong> (one submission per
-                    group, mentioning the names)
-            </ul>
-
-            <hr>
-
-            <p><strong>Final Project:</strong> The final project is a major component of the course.
-                Teams of approximately <strong>3-5 students</strong>, three milestones (proposal, mid-project,
-                final poster + report), poster session on Dec 7 and report due Dec 9. See the
-                <a href="project.html">Final Project</a> page for the full description, timeline, and report
-                requirements.</p>
-
-            <hr>
-
-            <p><strong>Grading:</strong></p>
-            <ul>
-                <li><strong>50%:</strong> Final Project
-                <li><strong>23%:</strong> Paper Reviews + Active Discussions
-                <li><strong>25%:</strong> Class Presentation
+                <h3>For Students</h3>
+                <div class="subsection">
+                    <h4>Discussion</h4>
                     <ul>
-                        <li>5%: Pre- and Post-Presentation Slide Submission
-                        <li>20%: In-class presentation
+                        <li>10-minute discussion following the critique
+                        <li>Students discuss the presenters' questions in small groups of <strong>2-6</strong>
+                        <li>Each group submits a short discussion summary to <strong>Gradescope</strong> (one
+                            submission per group)
                     </ul>
-                <li><strong>2%:</strong> Course Feedback
-            </ul>
+                </div>
+            </section>
 
-            <hr>
+            <section id="final-project" class="policy-section">
+                <h2>Final Project</h2>
+                <p>The final project is a major component of the course. Teams of approximately
+                    <strong>3-5 students</strong>, three milestones (proposal, mid-project, final poster + report),
+                    poster session on Dec 7 and report due Dec 9. See the
+                    <a href="project.html">Final Project</a> page for the full description, timeline, and report
+                    requirements.</p>
+            </section>
 
-            <p><strong>Piazza Rules:</strong></p>
+            <section id="grading" class="policy-section">
+                <h2>Grading</h2>
+                <ul>
+                    <li><strong>50%:</strong> Final Project
+                    <li><strong>23%:</strong> Paper Reviews + Active Discussions
+                    <li><strong>25%:</strong> Class Presentation
+                        <ul>
+                            <li>5%: Pre- and Post-Presentation Slide Submission
+                            <li>20%: In-class presentation
+                        </ul>
+                    <li><strong>2%:</strong> Course Feedback
+                </ul>
+            </section>
 
-            <ul>
-                <li>We use Piazza for discussions on conceptual and technical questions among classmates. There is no
-                    anonymity. Please be respectful to your classmates.
-                <li>Please post your questions, answers, and comments in dedicated folders. Each paper we read in the
-                    class has its own thread of discussions.
-                <li>Please check Piazza for already posted questions before posting a new one. Unnecessarily clogging up
-                    Piazza makes the platform less usable for everybody.
-                <li>Please use Piazza for all communications, private or public, as much as possible. Others will
-                    benefit from answers and discussions on public questions.
-                <li>Piazza is moderated by the teaching staff.
-            </ul>
-            <p><strong>Email Rules:</strong></p>
+            <section id="piazza-rules" class="policy-section">
+                <h2>Piazza Rules</h2>
+                <ul>
+                    <li>We use Piazza for discussions on conceptual and technical questions among classmates. There
+                        is no anonymity. Please be respectful to your classmates.
+                    <li>Please post your questions, answers, and comments in dedicated folders. Each paper we read in
+                        the class has its own thread of discussions.
+                    <li>Please check Piazza for already posted questions before posting a new one. Unnecessarily
+                        clogging up Piazza makes the platform less usable for everybody.
+                    <li>Please use Piazza for all communications, private or public, as much as possible. Others will
+                        benefit from answers and discussions on public questions.
+                    <li>Piazza is moderated by the teaching staff.
+                </ul>
+            </section>
 
-            <ul>
-                <li>Please email <a href="mailto:park-eecs542@umich.edu">park-eecs542@umich.edu</a> only if the Piazza private channel does not work for you. 
-                <li>This single contact ensures that your concerns are addressed in the most timely manner.
-                    <!-- with theclarity of a single voice that represents the entire instruction team. -->
-            </ul>
-
-            <p><strong>Sign-Up:</strong> If you need to be considered for a registration override or put on the
-                wait-list, please sign up at <a href="">this form</a>.</p>
+            <section id="email-rules" class="policy-section">
+                <h2>Email Rules</h2>
+                <ul>
+                    <li>For questions, please use Piazza or email
+                        <a href="mailto:park-eecs542@umich.edu">park-eecs542@umich.edu</a>.
+                    <li>Emails to individual teaching staff members will be ignored.
+                </ul>
+            </section>
 
         </div>
     </div>
