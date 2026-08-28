@@ -77,21 +77,54 @@
         a {
             text-decoration: none;
         }
+        .bgimg {
+            background: #c1dcf3a0;
+            padding: 40px 24px 32px;
+            text-align: center;
+        }
+
+        .site-title {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: 0.01em;
+            color: #16232e;
+        }
+
+        .site-subtitle {
+            margin: 12px 0 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #4c6274;
+        }
+
+        @media (max-width: 600px) {
+            .bgimg {
+                padding: 28px 16px 22px;
+            }
+
+            .site-title {
+                font-size: 1.4rem;
+            }
+
+            .site-subtitle {
+                font-size: 0.85rem;
+                letter-spacing: 0.14em;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <center>
-        <header id="header" class="alt" style="width: 100%">
-            <div class="bgimg" style="height: 80px; background:  #c1dcf3a0">
-                <div style="height: 30px; width: 100%"></div>
-                <h1>
-                    <font size="+3">EECS 542: Advanced Topics in Computer Vision</font>
-                    <div style="height:10px"></div>
-                </h1>
-            </div>
-        </header>
-    </center>
+    <header id="header" class="alt">
+        <div class="bgimg">
+            <h1 class="site-title">EECS 542: Advanced Topics in Computer Vision</h1>
+            <p class="site-subtitle">Fall 2026</p>
+        </div>
+    </header>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
         style="padding-top: 5px; padding-bottom: 5px; height: 50px;">
@@ -109,10 +142,7 @@
                         <a class="nav-link fs-5" href="schedule.html">Schedule</a>
                     </li>
                     <li class="nav-item" style="margin-right: 30px;">
-                        <a class="nav-link fs-5" href="https://piazza.com/class/lm0ztz3mbbv3lx">Piazza</a>
-                    </li>
-                    <li class="nav-item" style="margin-right: 30px;">
-                        <a class="nav-link fs-5" href="https://www.gradescope.com/courses/602583">Gradescope</a>
+                        <a class="nav-link fs-5" href="project.html">Final Project</a>
                     </li>
                 </ul>
             </div>
@@ -124,11 +154,14 @@
         <div class="course-info">
             <p><strong>Course Info</strong>
             <ul>
-                <li>Lectures: 2505 GGBL, Mondays/Wednesdays 10:30-12:00
-                <li>Instructor Office Hours: 
+                <li>Lectures: 2505 GGBL, Mondays/Wednesdays 10:30 AM-12:00 PM
+                <li>Relevant Links:
+                    <a href="https://piazza.com/class/msyw1hcgw4l29y">Piazza</a> /
+                    <a href="https://www.gradescope.com/courses/1356343">Gradescope</a>
+                <li>Instructor Office Hours:
                 <li>GSI Office Hours:
             </ul>
-            <p><strong>Instructors:</strong>
+            <p><strong>Instructor:</strong>
                 <a href="https://jjparkcv.github.io/">Jeong Joon Park</a>
             </p>
             <p><strong>GSIs:</strong>
@@ -136,56 +169,101 @@
                 <a href="https://hyelinnam.github.io/">Hyelin Nam</a>
             </p>
 
-    
+            <hr>
 
-            <p><strong>Lecture Format:</strong> For each lecture starting from Lecture 3, all students are required to
-                read the two assigned papers. At the beginning of each lecture, there will be a 15-minute lecture,
-                followed by the presentation and discussion for the two papers. </p>
-
-            <p><strong>Paper Reviews:</strong> For each paper to be presented in lecture, you will summarize an aspect
-                of the paper that you find interesting,
-                specifically what is interesting and why, and then additionally explain how the 2 papers are connected.
-            </p>
-
-            <p><strong>Presentations:</strong> A team of two students will prepare the presentation of each paper, which
-                is composed of 15-minute presentation of the paper followed by a 5-minute critique and a 10-minute group
-                discussion. For the presentation of the paper, the students should cover the history of the paper
-                (Determine where this paper sits in the context of previous work. Find and report on one older paper
-                cited by the current paper) briefly and explain the main idea, algorithm, and the experiments to the
-                rest of the class. For the 5-minute critique, the student should present a CVPR-style review of the
-                paper (described below) and suggest a possible future direction of the paper. After each presentation
-                and critique, there's 10 minute group discussion. The presentor team is should prepare 3 interesting
-                questions and discussion points to the class. The two teammates are expected to contribute equally to
-                the preparation of the all materials. <a
-                    href='https://docs.google.com/spreadsheets/d/11Pybu9c_4HX3GKm78pTtEtigPRRV8tWxYVSSIX7Vr3I/edit?usp=sharing'>(sign
-                    up sheet)</a>
-
-            </p>
-
-
-            <p><strong>CVPR-style review format is the following:</p></strong>
+            <p><strong>Lecture Format:</strong> Each lecture is approximately 80 minutes. Starting from Lecture 3, all
+                students are expected to read the two assigned papers before class. </p>
+            For each paper, the class time is organized as:
             <ul>
-                <li>Paper Summary
-                <li>Paper Strengths
-                <li>Confidence Level: 1~5
-                <li>Final Rating: Strong Reject, Weak Reject, Borderline, Weak Accept, Strong Accept
-                <li>Final Rating Justification
+                <li>20 min presentation (approximately 15 minutes for the presentation and 5 minutes for the critique)
+                <li>10 min discussion
+                <li>10 min for any questions
+            </ul>
+            <p>The goal of the course is not only to understand the
+                technical content of each paper, but also to practice critically reading, presenting, and discussing
+                research.</p>
+
+            <p><strong>Final Project Discussion:</strong></p>
+            <ul>
+                <li>
             </ul>
 
-            <p><strong>GPU Computing:</strong> Great Lakes computing credits are provided for the project. More details
-                to
-                follow.</p>
+            <hr>
 
-            <p><strong> Grading:</p></strong>
+            <p><strong>Paper Reviews:</strong> Submit a review for each assigned paper <strong>before class</strong>
+                through <strong>Gradescope</strong>. Please follow a CVPR-style review format:</p>
             <ul>
-                <li>50%: Final Project
-                <li>30%: Paper Reviews (lowest 3 dropped) + Active Discussions (1+ post) before and during class
-                <li>18%: Class Presentation
-                <li>02%: Course Feedback
+                <li>Summary
+                <li>Strengths
+                <li>Weaknesses (Major / Minor)
+                <li>Personal Interest (1-5) with justification
+                    <ul>
+                        <li>1: Low, 2: Somewhat low, 3: Neutral, 4: High, 5: Very high
+                    </ul>
+            </ul>
+            <p>There is <strong>no strict character or page limit</strong> for the review.</p>
+
+            <hr>
+
+            <p><strong>Paper Presentations:</strong></p>
+            <ul>
+                <li>Presentation teams consist of <strong>2-3 students</strong>
+                <li>Sign up for a paper and presentation slot using the
+                    <a href="https://docs.google.com/spreadsheets/d/11Pybu9c_4HX3GKm78pTtEtigPRRV8tWxYVSSIX7Vr3I/edit?usp=sharing">sign-up
+                        sheet</a>
+                <li>Prepare a <strong>20-minute presentation</strong> of the assigned paper
             </ul>
 
+            <p><strong>Slide Submission Policy:</strong> Please submit your slides through the Google Form (link TBA)
+                both <strong>before and after your presentation</strong>.</p>
+            <ul>
+                <li><strong>Pre-presentation submission:</strong>
+                    <ul>
+                        <li>Monday presentations: due by Friday EOD
+                        <li>Wednesday presentations: due by Sunday EOD
+                        <li>The slides do not need to be fully polished, but they should at least clearly show the
+                            overall structure and flow of your presentation.
+                        <li>You can continue editing your slides after this submission.
+                        <li>The teaching staff may provide feedback if needed.
+                    </ul>
+                <li><strong>Final submission:</strong> submit the final version of your slides by the end of your
+                    presentation day.
+            </ul>
 
-            <p><strong>Piazza Rules:</p></strong>
+            <p><strong>Discussion:</strong></p>
+            <ul>
+                <li>10-minute discussion after each paper presentation
+                <li>Discuss in small groups of <strong>2-6 students</strong>
+                <li>Presenters prepare approximately <strong>5 discussion questions</strong>
+                <li>Each group submits a short discussion summary to <strong>Gradescope</strong> (one submission per
+                    group, mentioning the names)
+            </ul>
+
+            <hr>
+
+            <p><strong>Final Project:</strong> The final project is a major component of the course.
+                Teams of approximately <strong>3-5 students</strong>, three milestones (proposal, mid-project,
+                final poster + report), poster session on Dec 7 and report due Dec 9. See the
+                <a href="project.html">Final Project</a> page for the full description, timeline, and report
+                requirements.</p>
+
+            <hr>
+
+            <p><strong>Grading:</strong></p>
+            <ul>
+                <li><strong>50%:</strong> Final Project
+                <li><strong>23%:</strong> Paper Reviews + Active Discussions
+                <li><strong>25%:</strong> Class Presentation
+                    <ul>
+                        <li>5%: Pre- and Post-Presentation Slide Submission
+                        <li>20%: In-class presentation
+                    </ul>
+                <li><strong>2%:</strong> Course Feedback
+            </ul>
+
+            <hr>
+
+            <p><strong>Piazza Rules:</strong></p>
 
             <ul>
                 <li>We use Piazza for discussions on conceptual and technical questions among classmates. There is no
@@ -198,19 +276,16 @@
                     benefit from answers and discussions on public questions.
                 <li>Piazza is moderated by the teaching staff.
             </ul>
-            <p><strong>Email Rules:</p></strong>
+            <p><strong>Email Rules:</strong></p>
 
             <ul>
-                <li>Please email syu-eecs542@umich.edu only if the Piazza private channel does not work for you. Emails
-                    to individual teaching staff members will be ignored.
-                <li>This single contact ensures that your concerns are addressed in the most timely manner, with the
-                    clarity of a single voice that represents the entire instruction team.
+                <li>Please email <a href="mailto:park-eecs542@umich.edu">park-eecs542@umich.edu</a> only if the Piazza private channel does not work for you. 
+                <li>This single contact ensures that your concerns are addressed in the most timely manner.
+                    <!-- with theclarity of a single voice that represents the entire instruction team. -->
             </ul>
 
-
-
-            <p><strong>Sign-Up:</p></strong> If you need to be considered for a registration override or put on the
-            wait-list, please sign up at<a href="https://forms.gle/CjKUeYYErLXeZYTr9"> this form</a>.
+            <p><strong>Sign-Up:</strong> If you need to be considered for a registration override or put on the
+                wait-list, please sign up at <a href="">this form</a>.</p>
 
         </div>
     </div>
@@ -218,5 +293,6 @@
     <!-- Include Bootstrap JS and Popper.js for dropdowns -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 
 </html>

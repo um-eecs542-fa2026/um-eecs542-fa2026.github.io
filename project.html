@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EECS 542 - Final Project</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* Custom styles */
+        .centered-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .course-info {
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #000000;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        h6 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .table thead th {
+            background-color: #8ea9db;
+            color: white;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: #959fd0;
+        }
+
+        .table tbody tr:hover {
+            background-color: #959fd0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        .bgimg {
+            background: #c1dcf3a0;
+            padding: 40px 24px 32px;
+            text-align: center;
+        }
+
+        .site-title {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: 0.01em;
+            color: #16232e;
+        }
+
+        .site-subtitle {
+            margin: 12px 0 0;
+            font-size: 0.95rem;
+            font-weight: 400;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #4c6274;
+        }
+
+        @media (max-width: 600px) {
+            .bgimg {
+                padding: 28px 16px 22px;
+            }
+
+            .site-title {
+                font-size: 1.4rem;
+            }
+
+            .site-subtitle {
+                font-size: 0.85rem;
+                letter-spacing: 0.14em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="alt">
+        <div class="bgimg">
+            <h1 class="site-title">EECS 542: Advanced Topics in Computer Vision</h1>
+            <p class="site-subtitle">Fall 2026</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+        style="padding-top: 5px; padding-bottom: 5px; height: 50px;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav text-center" style="margin: auto;">
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link fs-5" href="./">Course Info</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link fs-5" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 30px;">
+                        <a class="nav-link fs-5" href="project.html">Final Project</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="centered-content">
+        <div class="course-info">
+            <p><strong>Final Project:</strong> The final project is a major component of the course and is intended to
+                provide hands-on experience conducting research in computer vision or a closely related area.</p>
+            <ul>
+                <li>Teams of approximately <strong>3-5 students</strong>
+                <li>Three main milestones:
+                    <ul>
+                        <li>Project proposal / literature review
+                        <li>Mid-project presentation + report
+                        <li>Final poster presentation + final report
+                    </ul>
+                <li>Project ideas and team formation will be supported through <strong>Piazza</strong>.
+                <li>Once your team is formed, please register it using the project sign-up sheet (link TBA) and list all
+                    team members.
+                <li>Tentative timeline:
+                    <ul>
+                        <li><strong>Proposal:</strong> late September
+                        <li><strong>Mid-project:</strong> early November
+                        <li><strong>Poster session:</strong> Dec 7
+                        <li><strong>Report submission:</strong> Dec 9
+                    </ul>
+                <li>Due to the large number of students, we plan to have one <strong>dedicated project presentation
+                        day</strong>, while the remaining presentations will be scheduled during extra time in regular
+                    lectures.
+                <li>Exact deadlines and presentation schedules will be announced separately.
+            </ul>
+
+            <p><strong>Project Proposal &amp; Mid-Project Presentation:</strong></p>
+            <ul>
+                <li>7 min: presentation
+                <li>3 min: Q&amp;A and feedback
+                <li><strong>Proposal:</strong> problem/motivation, related work, and the overall direction or ideas you
+                    are considering.
+                <li><strong>Mid-project:</strong> method, progress so far, experimental setup, planned baselines and
+                    evaluation metrics, preliminary results if available, and remaining work / next steps.
+            </ul>
+
+            <p><strong>Mid-Project Report:</strong> The mid-project report should summarize the project direction and
+                planned experiments. It should include:</p>
+            <ul>
+                <li>Introduction
+                <li>Related Work
+                <li>Planned Method
+                <li>Experimental Plan
+                    <ul>
+                        <li>datasets
+                        <li>baselines
+                        <li>evaluation metrics
+                        <li>planned comparisons / ablations
+                        <li>expected tables or figures
+                    </ul>
+            </ul>
+            <p>Results are not required at this stage, but the experimental setup should be concrete enough that the
+                main experiments are clearly defined.</p>
+
+            <p><strong>Final Report:</strong> The final report should follow a
+                <a href="https://github.com/cvpr-org/author-kit">CVPR-style paper format</a> and include, at minimum:
+            </p>
+            <ul>
+                <li>Abstract
+                <li>Introduction
+                <li>Related Work
+                <li>Method
+                <li>Experiments
+                <li>Conclusion and Limitations
+            </ul>
+            <p>The report should clearly describe the problem, technical approach, experimental setup, results,
+                analysis, and limitations of the project. At the end of the report, include a brief <strong>contribution
+                    statement</strong> indicating the specific component(s) of the project led by each team member.
+                Every team member should be responsible for at least one specific and meaningful part of the project.
+            </p>
+
+            <hr>
+
+            <p><strong>GPU Computing:</strong> Great Lakes computing credits are provided for the project. More details
+                to follow.</p>
+
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js for dropdowns -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
