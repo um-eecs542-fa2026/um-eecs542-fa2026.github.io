@@ -78,7 +78,8 @@
                 <p>Starting from Lecture 3, all students are expected to read the two assigned papers before class.
                     For each paper:</p>
                 <ul>
-                    <li><strong>20-25 min presentation</strong> (last 3-5 min for critique)
+                    <li><strong>25 min presentation</strong> (20 min technical presentation + 5 min presenter's
+                        critique), ending with 3-5 discussion questions for the class
                     <li><strong>10 min discussion</strong>
                 </ul>
                 <p>See <a href="#paper-presentations">Paper Presentations</a> below for the critique and discussion
@@ -117,20 +118,55 @@
 
             <section id="paper-presentations" class="policy-section">
                 <h2>Paper Presentations</h2>
+                <p class="slot-lead">Each paper gets a <strong>35 minute</strong> slot: a 25 minute presentation
+                    from the presenters, then 10 minutes of small-group discussion by the whole class.</p>
+
+                <div class="slot-bar" role="img"
+                    aria-label="35 minute paper slot: 20 minutes technical presentation, 5 minutes presenter critique, 10 minutes class discussion">
+                    <div class="slot-fill seg-tech" style="flex-grow: 20;"><span>20 min</span></div>
+                    <div class="slot-fill seg-crit" style="flex-grow: 5;"><span>5 min</span></div>
+                    <div class="slot-fill seg-disc" style="flex-grow: 10;"><span>10 min</span></div>
+                </div>
+
+                <div class="slot-legend">
+                    <div class="slot-item">
+                        <span class="slot-swatch seg-tech"></span>
+                        <div>
+                            <div class="slot-name">Technical presentation</div>
+                            <div class="slot-who">Presenters</div>
+                        </div>
+                    </div>
+                    <div class="slot-item">
+                        <span class="slot-swatch seg-crit"></span>
+                        <div>
+                            <div class="slot-name">Presenters' critique</div>
+                            <div class="slot-who">Presenters</div>
+                        </div>
+                    </div>
+                    <div class="slot-item">
+                        <span class="slot-swatch seg-disc"></span>
+                        <div>
+                            <div class="slot-name">Group discussion</div>
+                            <div class="slot-who">Everyone &mdash; groups of 2-6, submit to Gradescope</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="slot-note">Details below.</p>
 
                 <h3>For Presenters</h3>
                 <ul>
-                    <li>Presentation teams consist of <strong>2-3 students</strong>
+                    <li>Presentation teams consist of <strong><=2 students</strong>
                     <li>Sign up for a paper and presentation slot using the
                         <a href="https://docs.google.com/spreadsheets/d/1cnji08lQKrJwkZ43ZI00ItNsRtfaftGQm21wNL2MeWw/edit?gid=1322294739#gid=1322294739">sign-up
                             sheet</a>
-                    <li>Prepare a <strong>20-25 minute presentation</strong> of the assigned paper
+                    <li>Presenters should prepare a <strong>~25 minute presentation</strong> of the assigned paper
                 </ul>
 
                 <div class="subsection">
                     <h4>Presentation Structure</h4>
                     <ul>
-                        <li><strong>Paper presentation:</strong> explain what the paper actually
+                        <li><strong>Technical presentation (~20 mins):</strong> explain what the paper actually
                             did, technically.
                             <ul>
                                 <li>Motivation and problem setting: what task the paper addresses and why prior work
@@ -141,11 +177,23 @@
                                 <li>Provide enough background so that the class can follow the method, but keep the
                                     focus on the paper's own technical contributions
                             </ul>
-                        <li><strong>Critique (last 3-5 minutes):</strong> your own take on the paper, framed as
-                            discussion questions for the class.
+                        <li><strong>Critique (~5 mins):</strong> your own opinion of the paper, Take a clear position and argue for it.
+                            <ul>
+                                <li>Strengths: what the paper gets right, and what is genuinely new
+                                <li>Weaknesses: overclaimed results, missing baselines, limitations the authors
+                                    gloss over
+                                <li>Validity of the experiments: do the experiments actually support the claims?
+                                    Are the datasets, baselines, metrics, and ablations appropriate and sufficient?
+                                <li>Significance and long-term impact: how much does this change the field, and
+                                    will it still matter in a few years?
+                            </ul>
+                        <li><strong>Discussion questions (stated at the very end of your 25 mins):</strong> these are
+                            <em>separate</em> from your critique &mdash; give them after you have shared your own take.
                             <ul>
                                 <li>Give <strong>3-5 discussion questions</strong> about the paper for the class
                                 <li>Good questions are open-ended and debatable rather than factual recall
+                                <li>Presenters do not need to answer these questions. Your presentation is finished
+                                    once you have stated them for the audience.
                             </ul>
                     </ul>
                 </div>
@@ -174,7 +222,8 @@
                 <div class="subsection">
                     <h4>Discussion</h4>
                     <ul>
-                        <li>10-minute discussion following the critique
+                        <li>10-minute discussion following the presentation (the last 10 minutes of the 35 minute
+                            slot for each paper)
                         <li>Students discuss the presenters' questions in small groups of <strong>2-6</strong>
                         <li>Each group submits a short discussion summary to <strong>Gradescope</strong> (one
                             submission per group)
