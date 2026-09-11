@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /internal_resources/
+
+Sitemap: https://um-eecs542-fa2026.github.io/sitemap.xml
