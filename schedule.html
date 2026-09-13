@@ -81,6 +81,69 @@
             line-height: 1.2;
         }
 
+        /* Slides banner above the schedule table */
+        .slides-note {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            max-width: 100%;
+            background-color: #ffffff;
+            border-left: 4px solid #8ea9db;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            padding: 16px 20px;
+            margin-bottom: 20px;
+        }
+
+        .slides-note-icon {
+            flex: none;
+            width: 24px;
+            height: 24px;
+            margin-top: 2px;
+            color: #4c6274;
+        }
+
+        .slides-note p {
+            margin: 0;
+            font-size: 1.06rem;
+            color: #2f4a63;
+            line-height: 1.55;
+        }
+
+        .slides-note p + p {
+            margin-top: 6px;
+        }
+
+        .slides-note a {
+            color: #1c4e80;
+            font-weight: 700;
+            border-bottom: 1px solid rgba(28, 78, 128, 0.35);
+        }
+
+        .slides-note a:hover {
+            border-bottom-color: #1c4e80;
+        }
+
+        .slides-note .slides-note-meta {
+            font-size: 0.92rem;
+            color: #6b7c8c;
+        }
+
+        .slides-note .slides-note-presenter {
+            font-size: 0.99rem;
+        }
+
+        .slides-note .slides-note-presenter strong {
+            color: #16232e;
+        }
+
+        @media (max-width: 600px) {
+            .slides-note {
+                padding: 14px 16px;
+                gap: 10px;
+            }
+        }
+
         /* Column widths */
         .table th:nth-child(1),
         .table td:nth-child(1) {
@@ -149,6 +212,23 @@
     </nav>
 
     <div class="container">
+        <div class="slides-note">
+            <svg class="slides-note-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            </svg>
+            <div>
+                <p>All paper presentation slides are available in
+                    <a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing"
+                        target="_blank" rel="noopener">this Google Drive folder</a>.
+                    <span class="slides-note-meta">(U-M credentials required)</span>
+                </p>
+                <p class="slides-note-presenter"><strong>Presenters:</strong> please upload your final slides before
+                    your presentation.</p>
+            </div>
+        </div>
+
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -251,7 +331,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -276,7 +356,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -299,7 +379,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -323,7 +403,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -347,7 +427,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -372,7 +452,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -396,7 +476,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -419,7 +499,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -442,7 +522,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -464,7 +544,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -489,7 +569,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -580,7 +660,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -602,7 +682,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -625,7 +705,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -647,7 +727,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -670,7 +750,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -693,7 +773,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -717,7 +797,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -740,7 +820,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -783,7 +863,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
@@ -805,7 +885,7 @@
                     </td>
                     <td>
                         <ul class="material-list">
-                            <li></li>
+                            <li class="nocaps"><a href="https://drive.google.com/drive/folders/198xMquK1OY7qbwtlpQmsgFr9ckKuc57x?usp=sharing" target="_blank" rel="noopener">Slides</a></li>
                         </ul>
                     </td>
                 </tr>
