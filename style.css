@@ -241,3 +241,79 @@ strong {
     font-weight: 700;
     color: #7a4a00;
 }
+
+/* --- News / announcements (Course Info page) --- */
+.news-section {
+    background: linear-gradient(180deg, #fffcf2 0%, #ffffff 65%);
+    border-left: 4px solid #e0a93c;
+}
+
+.news-section h2 {
+    border-bottom-color: #f0d79a;
+}
+
+.news-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.news-item {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding: 11px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.news-item:first-child {
+    padding-top: 2px;
+}
+
+.news-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.news-date {
+    flex: none;
+    background-color: #fbeecd;
+    color: #8a6415;
+    border-radius: 5px;
+    padding: 3px 9px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.news-body {
+    color: #2f4a63;
+    line-height: 1.55;
+}
+
+.news-tag {
+    display: inline-block;
+    margin-left: 8px;
+    background-color: #e0a93c;
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 1px 8px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    vertical-align: 2px;
+}
+
+@media (max-width: 600px) {
+    .news-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .news-date {
+        align-self: flex-start;
+    }
+}
